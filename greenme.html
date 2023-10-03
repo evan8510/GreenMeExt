@@ -8,7 +8,7 @@
     <div class="container text-center">
       <div class="row">
         <div class="col">
-          <img src = "leaf.png">
+          <img style = "padding-top: 5px;" src = "leaf.png">
         </div>
       </div>
       <div class="row">
@@ -22,14 +22,26 @@
     </div>
     <ul class="list-group">
       <li class="list-group-item">Emissions
-        <div style="width: 50%; height: 5px; background-color: darkslategray;"></div>
+        <div class="progress" role="progressbar" aria-label="emissions" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar text-bg-secondary" style="width: 50%">50%</div>
+        </div>
       </li>
       <li class="list-group-item">Waste Water
-        <div style="width: 25%; height: 5px; background-color: blue;"></div>
+        <div class="progress" role="progressbar" aria-label="wastewater" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar text-bg-primary" style="width: 25%">25%</div>
+        </div>
       </li>
       <li class="list-group-item">Other Waste
-        <div style="width: 100%; height: 5px; background-color: brown;"></div>
+        <div class="progress" role="progressbar" aria-label="other-waste" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar text-bg-dark" style="width: 75%">75%</div>
+        </div>
       </li>
     </ul>
+    <div class="row">
+      <div class="col">
+        <p id = "ptsErnd" class = "lead" style="white-space: nowrap;">GPoints earned: 5
+          <img style = "size: 12px;" src = "leaf.png"> </p>
+      <div class="col">
+    </div>
   </body>
 </html>
